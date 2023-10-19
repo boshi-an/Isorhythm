@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* Stack child elements vertically */
+    justify-content: center;
+    /* Center the content vertically */
+    align-items: center;
+    /* Center the content horizontally */
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin: 0;
+    gap: 150px;
+    /* Space between the circle container and the button container */
+}
+
+.circleContainer {
+    display: flex;
+    align-items: center;
+    width: 420px;
+    /* Adjust based on your circle sizes */
+}
+
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.uiContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid #3498db;
+    will-change: transform;
+    transform-origin: 50% 50%;
+}
+
+.letter {
+    position: absolute;
+    font-size: 1.5em;
+    /* Adjust as needed */
+    font-weight: bold;
+    /* Adjust as needed */
+    transform: translateY(-50%) rotate(-90deg);
+    /* Adjust as needed */
+    top: 50%;
+    left: -20px;
+    /* Adjust as needed to place the letter to the left side of the circle */
+}
+
+#triangle1 {
+    border-bottom: 87px solid #3498db;
+    /* background-color: #3498db; */
+}
+
+#triangle2 {
+    border-bottom: 87px solid #e74c3c;
+    /* background-color: #e74c3c; */
+}
+
+#circle1 {
+    background-color: #3498db;
+}
+
+#circle2 {
+    background-color: #e74c3c;
+}

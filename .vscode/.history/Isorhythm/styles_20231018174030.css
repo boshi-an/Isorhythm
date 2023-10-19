@@ -1,0 +1,99 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin: 0;
+    gap: 20px;
+}
+
+.circleContainer {
+    display: flex;
+    /* Use Flexbox */
+    align-items: center;
+    /* Vertically align the circles in the container */
+    justify-content: space-between;
+    /* Put maximum space between the circles */
+    width: 80%;
+    /* You can adjust this value as needed */
+    max-width: 600px;
+    /* Optional: to prevent the circles from getting too far apart on large screens */
+}
+
+.uiContainer {
+    display: flex;
+    /* Use Flexbox */
+    align-items: center;
+    /* Vertically align the circles in the container */
+    justify-content: space-between;
+    /* Put maximum space between the circles */
+    width: 80%;
+    /* You can adjust this value as needed */
+    max-width: 600px;
+    /* Optional: to prevent the circles from getting too far apart on large screens */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid #3498db;
+    will-change: transform;
+    transform-origin: 50% 50%;
+}
+
+.circle {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    will-change: transform;
+    transform-origin: 50% 50%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
+    position: absolute;
+    font-size: 1.5em;
+    /* Adjust as needed */
+    font-weight: bold;
+    /* Adjust as needed */
+    transform: translateY(-50%) rotate(-90deg);
+    /* Adjust as needed */
+    top: 50%;
+    left: -20px;
+    /* Adjust as needed to place the letter to the left side of the circle */
+}
+
+#triangle1 {
+    border-bottom: 87px solid #3498db;
+    /* background-color: #3498db; */
+}
+
+#triangle2 {
+    border-bottom: 87px solid #e74c3c;
+    /* background-color: #e74c3c; */
+}
+
+#circle1 {
+    background-color: #3498db;
+    top: 50px;
+    /* Adjust these values */
+    left: 50px;
+}
+
+#circle2 {
+    background-color: #e74c3c;
+    top: 50px;
+    /* Adjust these values */
+    left: 150px;
+}

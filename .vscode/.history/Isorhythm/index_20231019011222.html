@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Circles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="circleContainer">
+        <div class="circle" id="circle1">
+            <div class="letter">Color</div>
+        </div>
+        <div class="circle" id="circle2">
+            <div class="letter">Talea</div>
+        </div>
+    </div>
+    <div class="inputContainer">
+        <input type="text" id="input1" placeholder="Input Color">
+        <div class="taleaInputContainer">
+            <div class="imageArea" id="noteInputBox"></div>
+            <!-- <div class="taleaInputBox">
+                <input type="text" id="input2" placeholder="Input Talea" disabled>
+            </div> -->
+            <div class="taleaInputButton">
+                <div class="button small-btn" id="button1" onclick="addNote(1);"><img src="static/note1.png" /></div>
+                <div class="button small-btn" id="button1.5" onclick="addNote(1.5);"><img src="static/note1.5.png" /></div>
+                <div class="button small-btn" id="button2" onclick="addNote(2);"><img src="static/note2.png" /></div>
+                <div class="button small-btn" id="button2.5" onclick="addNote(2.5);"><img src="static/note2.5.png" /></div>
+                <div class="button small-btn" id="button3" onclick="addNote(3);"><img src="static/note3.png" /></div>
+                <div class="button small-btn" id="button3.5" onclick="addNote(3.5);"><img src="static/note3.5.png" /></div>
+                <div class="button small-btn" id="button4" onclick="addNote(4);"><img src="static/note4.png" /></div>
+                <div class="button small-btn" id="buttonReset" onclick="addNote(0);"><img src="static/reset.png" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="uiContainer">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+    </div>
+    <div class="div" id="display">
+        Color: #, Talea: #
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
