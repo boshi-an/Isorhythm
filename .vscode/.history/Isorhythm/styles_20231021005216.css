@@ -170,7 +170,4 @@ hr.solid {
     border-top: 3px solid #bbb;
 }
 
-.footer {
-    margin-left: 2.5em;
-    margin-right: 2.5em;
-}
+.footer {}
