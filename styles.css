@@ -9,6 +9,7 @@ body {
     /* height: 130vh; */
     background-color: #f4f4f4;
     overflow: scroll;
+    box-sizing: border-box;
     margin: 0;
     gap: 50px;
     /* Space between the circle container and the button container */
@@ -26,6 +27,7 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .taleaInputContainer {
@@ -33,6 +35,8 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .taleaInputBox {
